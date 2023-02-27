@@ -4,7 +4,7 @@ import java.nio.charset.*;
 class MyIO {
 
    private static BufferedReader in = new BufferedReader(new InputStreamReader(System.in, Charset.forName("ISO-8859-1")));
-   private static String charset = "utf-8";
+   private static String charset = "ISO-8859-1";
 
    public static void setCharset(String charset_){
       charset = charset_;

@@ -75,8 +75,10 @@ public class Algebra {
         s = s.replace("or(1,1,1,1)", "1");
         s = s.replace("or(1,1,1,0)", "1");
         s = s.replace("or(1,1,0,0)", "1");
+        s = s.replace("or(1,0,0,1)", "1");
         s = s.replace("or(1,0,0,0)", "1");
         s = s.replace("or(0,1,0,0)", "1");
+        s = s.replace("or(0,0,1,0)", "1");
         s = s.replace("or(0,1,1,0)", "1");
 
         return s;
@@ -88,6 +90,10 @@ public class Algebra {
     do{
         s = MyIO.readLine();
         s = s.replace(" ", "");
+
+        if(s.charAt(0) == '0'){
+            MyIO.println('0');
+        }
         
         if(s.charAt(0) == '2'){
             //MyIO.println("essa eh a string do caso1: " + caso1(s));
@@ -99,6 +105,6 @@ public class Algebra {
         }
 
 
-    }while(isFim(s) == false);
+    }while(s.charAt(0) != '0');
 }
 }
