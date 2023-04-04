@@ -1,0 +1,2 @@
+/tmp/personagens/Ackbar.txt
+Erro ao abrir o arquivo
